@@ -25,6 +25,15 @@ function nextnode(objson)
     local tb = json.decode(objson)
     print('在这里开始判断下一个节点的逻辑')
     
+    -- a = 100;
+    -- if( a < 20 )
+    -- then
+    --     print("a 小于 20" )
+    -- else
+    --     print("a 大于 20" )
+    -- end
+    -- print("a 的值为 :", a)
+    
     wxwork.send('这里发送的是企业微信内容')
     mail.send('这里发送的是邮件内容')
 
