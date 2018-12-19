@@ -63,13 +63,13 @@ print(ip.city)
 print("----------------------------")
 
 -- 返回当前节点的可选项
-function getOption(objson)
+function getoption(objson)
     local options = [[]]
     return options
 end
 
 -- 下一个审批节点
-function nextnode(objson)
+function actiondo(objson)
     local tb = json.decode(objson)
     print('在这里开始判断下一个节点的逻辑')
     -------------------------------------------------------
