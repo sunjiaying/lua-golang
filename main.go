@@ -20,11 +20,14 @@ func main() {
 		panic(err)
 	}
 
+	// 这里是一个对象参数，为模拟传入对象
+	objson := `{"a":"test"}`
+
 	if err := L.CallByParam(lua.P{
 		Fn:      L.GetGlobal("nextnode"),
 		NRet:    1,
 		Protect: true,
-	}, lua.LString(`{"a":"test"}`)); err != nil {
+	}, lua.LString(objson)); err != nil {
 		panic(err)
 	}
 	if str, ok := L.Get(-1).(lua.LString); ok {
