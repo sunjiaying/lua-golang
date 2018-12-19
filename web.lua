@@ -4,6 +4,8 @@ local json = require("json")
 local wxwork = require("wxwork")
 local mail = require("mail")
 
+
+print('以下是用于测试http和json组件')
 -- 测试http和json组件
 local client = http.client()
 local request = http.request("GET", "https://ipapi.co/120.229.14.207/json/")
