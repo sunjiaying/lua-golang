@@ -1,6 +1,5 @@
 local http = require("http")
 local json = require("json")
-local json = require("json")
 local wxwork = require("wxwork")
 local mail = require("mail")
 
